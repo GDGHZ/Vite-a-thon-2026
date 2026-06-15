@@ -4,16 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://gdghz.github.io/Vibe-a-thon-2026/">
-  <meta http-equiv="refresh" content="0; url=https://gdghz.github.io/Vibe-a-thon-2026/">
   <title>Redirecting to Vibe-a-thon 2026</title>
 </head>
 <body>
   <script>
-    location.replace('https://gdghz.github.io/Vibe-a-thon-2026/' + location.search + location.hash);
+    const oldPrefix = '/Vite-a-thon-2026/';
+    const newBase = 'https://gdghz.github.io/Vibe-a-thon-2026/';
+    const rest = location.pathname.startsWith(oldPrefix)
+      ? location.pathname.slice(oldPrefix.length)
+      : '';
+
+    location.replace(newBase + rest + location.search + location.hash);
   </script>
   <p>
-    正在跳转到
+    页面已迁移到
     <a href="https://gdghz.github.io/Vibe-a-thon-2026/">Vibe-a-thon 2026</a>
   </p>
 </body>
